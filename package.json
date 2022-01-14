@@ -1,0 +1,19 @@
+{
+  "name": "plastic-css",
+  "version": "1.0.0",
+  "description": "A CSS library for adding neumorphic extruded plastic style to your app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bogdan ionita <bog2k3@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/bog2k3/plastic-css",
+  "repository": {
+    "type": "git",
+    "git+https://github.com/bog2k3/plastic-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bog2k3/plastic-css/issues"
+  }
+}
