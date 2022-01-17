@@ -1,0 +1,169 @@
+body {
+	background: #eee;
+}
+
+.ps-panel {
+	margin: 1.5em;
+	padding: 1.5em;
+	box-shadow: -0.31em -0.31em 1.56em 0 #fff, inset 0.19em 0.19em 0.31em 0 #fff8, 0.62em 0.62em 1.25em #0000001d, inset -0.19em -0.19em 0.31em 0 #00000008;
+	border-radius: 0.625em;
+	color: #666;
+	border-style: solid;
+	border-width: 1px;
+	border-top-color: #fffa;
+	border-left-color: #fffa;
+	border-right-color: #0000000a;
+	border-bottom-color: #0000000a;
+}
+
+.ps-panel .ps-panel {
+	margin: 0.5em;
+}
+
+.ps-panel-sm {
+	padding: 0.5em 0.8em;
+}
+
+.ps-panel p {
+	color: #444;
+}
+
+.ps-panel hr {
+	border: none;
+	background: none;
+	box-shadow: -1px -1px 3px 0 black, 1px 1px 3px 0 white;
+}
+
+.ps-panel-sunk {
+	box-shadow: 0.31em 0.31em 0.62em inset #0001, -0.12em -0.12em 0.31em #00000008, -0.31em -0.31em 0.62em inset #fffb, 0.12em 0.12em 0.31em #fff;
+	border-top-color: #0000000a;
+	border-left-color: #0000000a;
+	border-right-color: #fffa;
+	border-bottom-color: #fffa;
+}
+
+.ps-glowtext {
+	text-shadow: 0.2em 0.2em 0.9em;
+}
+
+/** buttons ------------------------------------------------------------- */
+
+.ps-panel button,input[type=button],input[type=submit] {
+	margin: 0.5em;
+	padding: 0.5em;
+	box-shadow: -0.15em -0.15em 1em 0 #fff, inset 0.1em 0.1em 0.15em 0 #fff8, 0.2em 0.2em 0.3em #0000001d, inset -0.1em -0.1em 0.15em 0 #0000000a;
+	border-radius: 0.6em;
+	border-style: solid;
+	border-width: 1px;
+	border-top-color: #ffff;
+	border-left-color: #ffff;
+	border-right-color: #00000010;
+	border-bottom-color: #00000010;
+	background-color: #e8e8e8e8;
+	color: #666;
+}
+
+.ps-panel button[disabled],input[type=button][disabled],input[type=submit][disabled] {
+	color: #bbb;
+	text-shadow: -0.1em -0.1em 0.25em white;
+}
+
+.ps-panel button:not([disabled]):hover,input[type=button]:not([disabled]):hover,input[type=submit]:not([disabled]):hover {
+	background-color: #f8f8f8f8;
+}
+
+.ps-panel button:not([disabled]):active,input[type=button]:not([disabled]):active,input[type=submit]:not([disabled]):active {
+	background-color: #ddd;
+	box-shadow: inset 0.1em 0.1em 0.15em 0 #0003, 0.2em 0.2em 0.3em #fff, -0.1em -0.1em 0.2em #0001, inset 0 0 0.15em 0 #fff;
+	border-top-color: #00000018;
+	border-left-color: #00000018;
+	border-right-color: #fff8;
+	border-bottom-color: #fff8;
+}
+
+/** checkbox & radio ------------------------------------------------------------- */
+
+.ps-panel input[type=checkbox],input[type=radio] {
+	appearance: none;
+	background-color: #fff;
+	box-shadow: inset 0.1em 0.1em 0.15em 0 #0003, 0.2em 0.2em 0.3em #fff, -0.1em -0.1em 0.2em #0001, inset 0 0 0.15em 0 #fff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #00000015 #0001 #00000015 #0001;
+	width: 1em;
+	height: 1em;
+	vertical-align: middle;
+	transform: translateY(-0.1em);
+	margin-right: 0.2em;
+	border-radius: 0.2em;
+	position: relative;
+}
+
+.ps-panel input[type=radio] {
+	border-radius: 0.5em;
+}
+
+.ps-panel input[type=checkbox]:disabled,input[type=radio]:disabled {
+	background-color: #eee;
+	border: none;
+}
+
+.ps-panel input[type=checkbox]:disabled,input[type=checkbox]:disabled + label,input[type=radio]:disabled,input[type=radio]:disabled + label {
+	color: #bbb;
+	text-shadow: -0.1em -0.1em 0.25em #fff8;
+}
+
+.ps-panel input[type=checkbox]:not([disabled]):hover,input[type=radio]:not([disabled]):hover {
+	background-color: #f8fafa;
+}
+
+.ps-panel input[type=checkbox]:not([disabled]):active,input[type=radio]:not([disabled]):active {
+	background-color: #eee;
+}
+
+.ps-panel input[type=checkbox]:not([disabled]):hover,input[type=checkbox]:not([disabled]):hover + label,input[type=radio]:not([disabled]):hover,input[type=radio]:not([disabled]):hover + label {
+	text-shadow: 0 0 0.3em #bbb;
+}
+
+.ps-panel input[type=checkbox]:checked::after,input[type=radio]:checked::after {
+	content: " ";
+	width: 0.5em;
+	height: 0.5em;
+	border-radius: 0.1em;
+	position: absolute;
+	left: 0.25em;
+	top: 0.25em;
+	background-color: #f8f8f8;
+	box-shadow: 0 0 0.4em 0 #0008;
+}
+
+.ps-panel input[type=checkbox]:disabled:checked::after,input[type=radio]:disabled:checked::after {
+	background-color: #e8e8e8;
+	box-shadow: 0 0 0.4em 0 #0006;
+}
+
+.ps-panel input[type=radio]:checked::after {
+	border-radius: 0.25em;
+}
+/** TextBox & TextArea -------------------------------------------------------------------- */
+
+input[type=text],textarea {
+	appearance: none;
+	background-color: #fff;
+	box-shadow: inset 0.1em 0.1em 0.15em 0 #0003, 0.2em 0.2em 0.3em #fff, -0.1em -0.1em 0.2em #0001, inset 0 0 0.15em 0 #fff;
+	border-top-color: #00000018;
+	border-left-color: #00000018;
+	border-right-color: #fff8;
+	border-bottom-color: #fff8;
+	border-radius: 0.2em;
+	padding-left: 0.3em;
+	margin: 0.2em 0 0.3em;
+}
+
+input[type=text]:disabled,textarea:disabled {
+	background-color: #eee;
+}
+
+input[type=text]:focus-visible,textarea:focus-visible {
+	outline: 2px ridge #ddd;
+}

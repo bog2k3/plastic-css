@@ -1,0 +1,39 @@
+section {
+	margin: 2em 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px dashed darkgray;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.column {
+	flex: 1 1;
+	min-height: 2em;
+}
+
+.color-blue {
+	color: #56a5f2 !important;
+}
+
+.nomargin {
+	margin: 0;
+}
+
+.large-text {
+	font-size: 1.5em;
+}
+
+nav {
+	background: #ddd;
+	padding: 1em;
+	padding-left: 2em;
+}
+
+nav span {
+	margin-right: 2em;
+}

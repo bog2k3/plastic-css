@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>Plastic-CSS basic example</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link rel="stylesheet" href="examples.css">
+		<link rel="stylesheet" href="../src/plastic.css">
+	</head>
+	<body style="max-width: 1024px; margin: 0 auto">
+		<nav>
+			<span style="font-weight: bolder;">Basic</span>
+			<span><a href="controls.html">Controls</a></span>
+		</nav>
+		<p></p>
+		<h1>Plastic-CSS Basic demo</h1>
+		<section>
+			<h3>Panel</h3>
+			<div class="ps-panel">
+				<h4>This is a plastic panel</h4>
+				<hr>
+				<p>With some nice text</p>
+				<p>And another paragraph</p>
+			</div>
+		</section>
+		<section>
+			<h3>Sunken panel</h3>
+			<div class="ps-panel ps-panel-sunk">
+				<h4>This is a sunken plastic panel</h4>
+				<hr>
+				<p>With some nice text</p>
+				<p>And another paragraph</p>
+			</div>
+		</section>
+		<section>
+			<h3>Panel composition</h3>
+			<div class="ps-panel">
+				<h4>Panel with sunken children</h4>
+				<hr>
+				<div class="row">
+					<div class="column ps-panel ps-panel-sunk">Lorem ipsum</div>
+					<div class="column ps-panel ps-panel-sunk">Lorem ipsum</div>
+					<div class="column ps-panel ps-panel-sunk">Lorem ipsum</div>
+				</div>
+			</div>
+			<div class="ps-panel">
+				<h4>Panel with raised children</h4>
+				<hr>
+				<div class="row">
+					<div class="column ps-panel">Lorem ipsum</div>
+					<div class="column ps-panel">Lorem ipsum</div>
+					<div class="column ps-panel">Lorem ipsum</div>
+				</div>
+			</div>
+			<div class="ps-panel">
+				<h4>Multiple layers combined</h4>
+				<hr>
+				<div class="row">
+					<div class="column ps-panel">
+						<div class="row">
+							<div class="column ps-panel">Lorem ipsum</div>
+							<div class="column ps-panel">Lorem ipsum</div>
+							<div class="column ps-panel">Lorem ipsum</div>
+						</div>
+						<div class="row">
+							<div class="column ps-panel">Lorem ipsum</div>
+							<div class="column ps-panel">Lorem ipsum</div>
+							<div class="column ps-panel">Lorem ipsum</div>
+						</div>
+					</div>
+					<div class="column ps-panel">
+						<div class="row">
+							<div class="column ps-panel ps-panel-sunk">Lorem ipsum</div>
+							<div class="column ps-panel ps-panel-sunk">Lorem ipsum</div>
+							<div class="column ps-panel ps-panel-sunk">Lorem ipsum</div>
+						</div>
+						<div class="row">
+							<div class="column ps-panel ps-panel-sunk">Lorem ipsum</div>
+							<div class="column ps-panel ps-panel-sunk">Lorem ipsum</div>
+							<div class="column ps-panel ps-panel-sunk">Lorem ipsum</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<h3>Glow Text</h3>
+			<div class="ps-panel">
+				<h4 class="ps-glowtext">Panel with glow-text</h4>
+				<hr>
+				<p>Some standard text</p>
+				<div class="ps-panel ps-panel-sm ps-panel-sunk ps-glowtext">
+					<p class="nomargin large-text color-blue">Colored glow text</p>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
