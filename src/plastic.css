@@ -96,6 +96,18 @@ body {
 	outline: 2px ridge #bbb;
 }
 
+.ps-container button + button,
+.ps-container button + input[type=button],
+.ps-container button + input[type=submit],
+.ps-container input[type=button] + button,
+.ps-container input[type=button] + input[type=button],
+.ps-container input[type=button] + input[type=submit],
+.ps-container input[type=submit] + button,
+.ps-container input[type=submit] + input[type=button],
+.ps-container input[type=submit] + input[type=submit] {
+	margin-left: 0;
+}
+
 /** button classes -------------------------------------*/
 .ps-container button.ps-primary,
 .ps-container input[type=button].ps-primary,
@@ -226,6 +238,8 @@ body {
 /** TextBox & TextArea -------------------------------------------------------------------- */
 
 .ps-container input[type=text],
+.ps-container input[type=email],
+.ps-container input[type=password],
 .ps-container textarea {
 	appearance: none;
 	-moz-appearance: none;
@@ -242,11 +256,15 @@ body {
 }
 
 .ps-container input[type=text]:disabled,
+.ps-container input[type=email]:disabled,
+.ps-container input[type=password]:disabled,
 .ps-container textarea:disabled {
 	background-color: #eee;
 }
 
 .ps-container input[type=text]:focus-visible,
+.ps-container input[type=email]:focus-visible,
+.ps-container input[type=password]:focus-visible,
 .ps-container textarea:focus-visible {
 	outline: 2px ridge #ddd;
 }

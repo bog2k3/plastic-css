@@ -36,8 +36,6 @@
 				Praesent commodo sollicitudin cursus. Morbi vitae dapibus orci, bibendum vestibulum nibh. Quisque ut hendrerit nibh. Suspendisse ut dui ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer at elit aliquam, tristique eros tincidunt, ultrices massa. Donec quis ipsum arcu. Cras efficitur molestie ante ac finibus. Mauris faucibus dignissim odio et suscipit. Vestibulum eu rhoncus nisl, nec ornare est. In quis posuere diam, non pharetra leo.
 
 				Praesent eu dolor a mi gravida pretium. Sed finibus urna vel libero lobortis, eget accumsan ante faucibus. Fusce vehicula sem nulla, at tristique massa iaculis quis. Phasellus quis vehicula magna. Morbi aliquam bibendum tellus quis accumsan. Suspendisse ac ullamcorper arcu, vel scelerisque lorem. Duis semper tempor massa, id fermentum leo fringilla eu. Donec molestie urna id nisi posuere, sit amet fermentum magna malesuada. Nunc iaculis eros sit amet orci pellentesque fermentum.
-
-				Mauris scelerisque neque consectetur quam venenatis, a cursus ipsum gravida. Aliquam malesuada at metus id fermentum. Pellentesque a condimentum dui. Ut pulvinar arcu in mi luctus vehicula. Curabitur at ipsum lectus. Donec lacus ex, hendrerit et orci vitae, iaculis tincidunt urna. Quisque eget sapien non nisl mattis rutrum vel nec dolor. Morbi aliquam, ligula ac maximus fringilla, nunc enim tincidunt ipsum, ut mollis quam felis quis sapien. Aliquam id vehicula erat. Integer lorem velit, sollicitudin ut ultrices a, ullamcorper at nunc. In dignissim eu justo sed iaculis.
 			</div>
 		</section>
 		<div id="myModal" class="ps-modal">
@@ -48,13 +46,11 @@
 			<div class="ps-modal-body">
 				<p>This is the body of a modal.</p>
 				<p>The body can contain pretty much anything.</p>
-				<div class="row">
-					<label for="textinput1" class="column">Enter some text:</label>
-					<input type="text" id="textinput1" placeholder="go on...">
-				</div>
+				<label for="textinput1" class="column">Enter some text:</label>
+				<input type="text" id="textinput1" placeholder="go on...">
 			</div>
 			<div class="ps-modal-footer">
-				<button class="ps-success" onclick="handleClickSave()">Save</button>
+				<button class="ps-success" onclick="handleClickSave()">&#10004;&#xFE0E; Save</button>
 				<button class="ps-danger" onclick="handleClickDelete()">Delete</button>
 				<button class="ps-secondary" onclick="handleClickCancel()">Cancel</button>
 			</div>
@@ -64,12 +60,12 @@
 		modalInstance = null;
 
 		async function openModal() {
-			modalInstance = await psOpenModal("myModal");
 			try {
+				modalInstance = await psOpenModal("myModal");
 				let result = await modalInstance.result;
 				alert(`Modal result: ${result}`);
 			} catch (err) {
-				alert(`Modal reject reason: ${err}`);
+				alert(`Modal reject: ${err}`);
 			}
 		}
 
