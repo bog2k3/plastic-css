@@ -46,6 +46,37 @@ body {
 	text-shadow: 0.2em 0.2em 0.9em;
 }
 
+.ps-container .ps-panel-border {
+	position: relative;
+	margin: 1em;
+	padding: 1em;
+	box-shadow: -0.2em -0.2em 1em 0 #fff, inset 0.19em 0.19em 0.31em 0 #fff8, 0.2em 0.2em 0.5em #0000001d, inset -0.19em -0.19em 0.31em 0 #00000008;
+	border-radius: 0.5em;
+	color: #666;
+	border-style: solid;
+	border-width: 1px;
+	border-top-color: #fffa;
+	border-left-color: #fffa;
+	border-right-color: #0000000a;
+	border-bottom-color: #0000000a;
+}
+
+.ps-container .ps-panel-border::before {
+	content: " ";
+	z-index: -1;
+	box-shadow: 0.31em 0.31em 0.62em inset #0001, -0.12em -0.12em 0.31em #00000008, -0.31em -0.31em 0.62em inset #fffb, 0.12em 0.12em 0.31em #fff;
+	border-top-color: #0000000a;
+	border-left-color: #0000000a;
+	border-right-color: #fffa;
+	border-bottom-color: #fffa;
+	position: absolute;
+	top: 0.15em;
+	left: 0.15em;
+	right: 0.15em;
+	bottom: 0.15em;
+	border-radius: 0.5em;
+}
+
 /** buttons ------------------------------------------------------------- */
 
 .ps-container button,
@@ -149,6 +180,14 @@ body {
 .ps-container input[type=submit].ps-danger {
 	color: #e93f3f;
 	text-shadow: 0 0 15px #e93f3f;
+}
+
+.ps-container button.ps-button-sm,
+.ps-container input[type=button].ps-button-sm,
+.ps-container input[type=submit].ps-button-sm {
+	font-size: 0.8em;
+	padding: 0.3em;
+	margin: 0.25em;
 }
 
 /** checkbox & radio ------------------------------------------------------------- */
@@ -343,4 +382,9 @@ body.has-modal::before {
 	display: flex;
 	flex-direction: row;
 	justify-content: end;
+}
+
+/** Table -----------------------------------------------------------------------------------*/
+
+.ps-container table {
 }

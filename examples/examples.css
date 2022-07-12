@@ -37,3 +37,7 @@ nav {
 nav span {
 	margin-right: 2em;
 }
+
+table {
+	width: 100%;
+}
