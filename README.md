@@ -6,3 +6,6 @@ Most elements will be styled automatically. You need to add **"ps-panel"** class
 See the examples for more info, the code is self explanatory.
 
 The **plastic.js** file is required only for modal functionality.
+
+# Live examples
+See a live demo here https://bog2k3.github.io/plastic-css/
