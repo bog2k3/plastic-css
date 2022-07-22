@@ -8,7 +8,7 @@
   },
   "author": "bogdan ionita <bog2k3@gmail.com>",
   "license": "ISC",
-  "homepage": "https://github.com/bog2k3/plastic-css",
+  "homepage": "https://bog2k3.github.io/plastic-css/",
   "repository": {
     "type": "git",
     "git+https://github.com/bog2k3/plastic-css.git"
