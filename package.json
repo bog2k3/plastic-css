@@ -11,7 +11,7 @@
   "homepage": "https://bog2k3.github.io/plastic-css/",
   "repository": {
     "type": "git",
-    "git+https://github.com/bog2k3/plastic-css.git"
+    "url": "git+https://github.com/bog2k3/plastic-css.git"
   },
   "bugs": {
     "url": "https://github.com/bog2k3/plastic-css/issues"
